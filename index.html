@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" href="images/favicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="container">
+        <img id="img" src="images/flower.jpg" alt="">
+        <h1 id="songName">Wind Chimes</h1>
+        <p id="artist">SoundsForYou</p>
+        <audio src="audio/wind-chimes-bells-115747.mp3" id="audio"></audio>
+        <input type="range" value="0" id="progress">
+        <div id="controls">
+            <div><i class="fa-solid fa-heart" id="heart"></i></div>
+            <div><i class="fa-solid fa-backward" id="prev"></i></div>
+            <div><i class="fa-solid fa-play" id="playBtn"></i></div>
+            <div><i class="fa-solid fa-forward" id="next"></i></div>
+            <div><i class="fa-solid fa-rotate-right" id="restart"></i></div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

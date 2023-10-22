@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", "Roboto", sans-serif;
+}
+body{
+    background: #FBE4D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 570px;
+}
+#container{
+    background: #384358;
+    border-radius: 30px;
+    padding: 35px 40px;
+    width: 55%;
+    text-align: center;
+    color: #FFF;
+}
+img{
+    width: 150px;
+    height: 150px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    margin-bottom: 3%;
+    animation: rotation 6s infinite linear;
+    animation-play-state: paused;
+}
+@keyframes rotation{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+h1{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.5rem;
+    color: #c9c4c4;
+    margin: 1% 0 3% 0;
+}
+input{
+    margin: 3% 0;
+    width: 100%;
+}
+#controls{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    font-size: 1.3rem;
+}
+#controls i, input{
+    cursor: pointer;
+}
